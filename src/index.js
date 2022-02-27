@@ -42,7 +42,6 @@ const init = (() => {
   let animationId;
   function gameLoop() {
     animationId = requestAnimationFrame(gameLoop);
-    context.fillStyle = "rgb(0, 0, 0, 0.1)";
     context.clearRect(0, 0, canvas.width, canvas.height);
     player.drawArc();
     player.update();
