@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body{
+  background-image: url("../public/images/space-background.jpg");
+  background-repeat: no-repeat;
+}
+
+#canvas{
+  display: block;
+}
+
+#score-container{
+  position: fixed;
+  top:0;
+  left: 0;
+  color: white;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#score{
+  font-weight: bold;
+}
+
+.endScreen{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  font-size: 2rem;
+  padding: 1rem;
+  color: white;
+  background-color: #1d1d1d;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transform: translateY(-100%) translateX(-50%);
+  transition: all 300ms ease-in 0s;
+}
+
+.play-again{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 100px;
+  padding: 1rem;
+  color: #1d1d1d;
+  background-color: #dddddd;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+  transition: background-color 300ms ease-in-out 0s;
+}
+
+.play-again:hover{
+  background-color: #999999;
+}
